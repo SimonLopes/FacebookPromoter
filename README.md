@@ -2,6 +2,7 @@
 **PROJETO PARA FINS DE ESTUDOS**
 
 **NÃO USE EM PRODUÇÃO, PODE RESULTAR EM BANIMENTO DA CONTA E DO SCRIPT**
+
 Robo de divulgação em massa em grupos para Facebook.
 
 ## Tecnologias envolvidas
