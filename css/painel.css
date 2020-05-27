@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1d1f27; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B294FF; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(137, 107, 212); 
+}
+
+body{
+    background-color: #282c30;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30%;
+    height: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.input{
+    line-height: 35px;
+    border: none;
+    border-style: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    background-color: #4145498e;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    border-bottom: 2px solid #B294FF;
+    transition: 1s;
+    margin-bottom: 15px;
+}
+
+.input:focus{
+    border-bottom: 2px solid rgb(255, 148, 223);
+}
+
+.textarea{
+    transition: 0s;
+    resize: vertical;
+    height: 100px;
+    border: none;
+    border-style: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    background-color: #4145498e;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    border-bottom: 2px solid #B294FF;
+    margin-bottom: 15px;
+}
+.textarea:focus{
+    border-bottom: 2px solid rgb(255, 148, 223);
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #4145498e;
+    width: 60px;
+    height: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.text-checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.text-checkbox p{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+
+}
+
+.checkbox:hover:after{
+    filter:grayscale(60%);
+}
+.checkbox:after{
+    content: '';
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #B294FF;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.headless:checked + .checkbox{
+    justify-content: flex-end;
+}
+.headless:checked + .checkbox:after{
+    content: '';
+    background-color: rgb(255, 148, 223);
+
+}
+.headless{
+    display: none;
+}
+#imagem{
+    display: none;
+}
+.view-images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5px;
+
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #1d1f27;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 113px;
+    height: 160px;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+.image:hover{
+    filter: grayscale(40%);
+}
+.icon-delete{
+    opacity: 0;
+}
+.image:hover > .icon-delete{
+    opacity: 1;
+}
+.add-image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 113px;
+    height: 160px;
+    border-radius: 15px;
+    margin: 0;
+    background: linear-gradient(to right, white 60%, rgba(255, 255, 255, 0) 0%), linear-gradient(white 60%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, white 60%, rgba(255, 255, 255, 0) 0%), linear-gradient(white 60%, rgba(255, 255, 255, 0) 0%);
+    background-position: top, right, bottom, left;
+    background-repeat: repeat-x, repeat-y;
+    background-size: 25px 3px, 3px 25px;
+    background-color: #ffffff50;
+    cursor: pointer;
+    margin: 10px;
+
+}
+.add-image:hover{
+    background-color: #ffffff25;
+
+}
+.icon{
+    font-size: 32px;
+}
+
+.espaced{
+    width: 20px;
+    height: 170px;
+}
+
+.submit{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.submit:hover{
+    background-color: transparent;
+    color: #4CAF50;
+    border:  #4CAF50 solid 3px;
+}

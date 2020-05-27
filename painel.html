@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    
+    <script src="https://kit.fontawesome.com/54c59eed8d.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/painel.css">
+</head>
+<body>
+    <div class="background">
+        <div class="input-div">
+            <label for="grupo">Assunto do grupo:</label>
+            <input type="text" name="grupo" id="grupo" class="input">
+            <label for="texto">Texto a postar:</label>
+            <textarea type="text" name="texto" id="texto" class="textarea" maxlength="500"></textarea>
+            <label for="headless">Mostrar processo:</label>
+            <input type="checkbox" name="headless" id="headless" class="headless">
+            <label for="headless" class="checkbox">
+                <div class="text-checkbox">
+                    <p>On</p>
+                    <p>Off</p>
+                </div>
+                
+            </label>
+
+            <div class="view-images" id="view-images">
+                <input type="file" name="files[]" id="imagem" multiple>
+                <label for="imagem" class="add-image">
+                    <i class="icon fas fa-plus"></i>                
+                </label>
+            </div>
+            
+            <button id="send" class="submit">Iniciar</button>
+        </div>
+    </div>
+    <script src="js/painel.js"></script>
+</body>
+</html>
